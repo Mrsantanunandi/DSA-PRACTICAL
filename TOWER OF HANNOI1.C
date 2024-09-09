@@ -18,6 +18,6 @@ int main()
     char A,B,C;
     printf("Eneter num of disk: ");
     scanf("%d",&n);
-    TOH(n,'A','B','C');
+    TOH(n,'A','C','B');
     return 0;
 }
