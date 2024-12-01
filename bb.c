@@ -125,17 +125,17 @@ Node* deletes(struct node* root,int item)
 
 int search(struct node* root,int item)
 {
-	if(root==item)
+	if(root->data==item)
 	{
 		return 1;
 	}
 	if(root->data>item)
 	{
-		root->left=search(root->left);
+		return search(root->left,item);
 	}
 	else if(root->data<item)
 	{
-		root->right=search(root->right);
+		return search(root->right,item);
 	}
 	return 0;
 }
